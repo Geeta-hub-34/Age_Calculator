@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Heading section: centered with custom font size and color */
+.heading {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #5D6970;
+}
+
+/* Main container for layout: flexbox for centering, gap for spacing */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 75vh;
+    margin: 100px auto;
+    gap: 3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
+/* Left section for the input form */
+.left__div {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the labels (Date, Month, Year) */
+.left__div p {
+    color: #E7ECFF;
+    font-size: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 2.5rem;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+}
+
+/* Input block for organizing each input field */
+.block {
+    width: 135px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/* Styling for the number input fields (Date, Month, Year) */
+input[type=number] {
+    width: 150px;
+    margin: auto;
+    outline: none;
+    min-height: 50px;
+    border: 2px solid #1804f8;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    color: #0420fa;
+    font-size: 17px;
+}
+
+/* Focus state for number inputs: background and border change */
+input[type=number]:focus {
+    background-color: #ffffff;
+    border: 2px solid black;
+    outline: none;
+}
+
+/* Styling for the submit button */
+input[type=button] {
+    width: 150px;
+    margin-left: 42.5%;
+    margin-top: 40px;
+    outline: none;
+    border: 2px solid #5D6970;
+    border-radius: 2px;
+    background-color: #5D6970;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+input[type=button]:hover {
+    background-color: transparent;
+    color: #5D6970;
+    border: 2px solid #5D6970;
+}
+
+/* Styling for both left and right div sections */
+.right__div, .left__div {
+    background-color: #091133;
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.right__div {
+    display: none; /* Hide the right container initially */
+}
+
+/* Styling for the age result display */
+#age {
+    margin: 8rem 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: #E7ECFF;
+}

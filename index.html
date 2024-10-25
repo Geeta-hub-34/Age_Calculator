@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section class="section">
+        <!-- Section heading -->
+        <div class="heading">
+            <h1>Age Calculator</h1>
+        </div>
+        <div class="container">
+            <!-- Left side: User input form for date, month, and year -->
+            <div class="left__div">
+                <form action="#">
+
+                    <!-- Block for inputting the day of birth -->
+                    <div class="block">
+                        <p>Date</p>
+                        <input type="number" name="date" id="date" placeholder="dd" required="" minlength="1" maxlength="2">
+                    </div>
+        
+                    <!-- Block for inputting the month of birth -->
+                    <div class="block">
+                        <p>Month</p>
+                        <input type="number" name="month" id="month" placeholder="mm" required="" minlength="1" maxlength="2">
+                    </div>
+        
+                    <!-- Block for inputting the year of birth -->
+                    <div class="block">
+                        <p>Year</p>
+                        <input type="number" name="year" id="year" placeholder="yyyy" required="" minlength="1" maxlength="4">
+                    </div>
+    
+                    <!-- Submit button to trigger age calculation -->
+                    <div class="base">
+                        <div class="enter">
+                            <input type="button" name="submit" value="Submit" onclick="age()" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right side: Container for displaying the calculated age -->
+            <div class="right__div" id="ageContainer">
+                <div id="age"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link to external Javascript file -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
